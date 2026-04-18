@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>李帛達 Li Bo-Da | 個人作品集</title>
+    <style>
+        :root { --primary: #1e3a8a; --secondary: #ef4444; --bg: #f8fafc; }
+        body { font-family: "Microsoft JhengHei", sans-serif; margin: 0; background: var(--bg); color: #1e293b; }
+        .container { max-width: 900px; margin: 40px auto; padding: 20px; }
+        .card { background: white; padding: 40px; border-radius: 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.05); }
+        .tag { display: inline-block; background: #e2e8f0; padding: 4px 12px; border-radius: 50px; font-size: 0.85em; margin: 2px; }
+        
+        /* 響應式切換邏輯 */
+        .pc-only { display: none; }
+        .m-only { display: none; }
+
+        @media (min-width: 769px) { .pc-only { display: block; } }
+        @media (max-width: 768px) { .m-only { display: block; } .card { text-align: center; } }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="card">
+        <div class="pc-only">
+            <h1>李帛達 (2005)</h1>
+            <p><strong>朝陽科技大學 資工系</strong> | 高中專題比賽選手</p>
+            <hr>
+            <h3>💻 專業技術：C/C++、電腦繪圖、3D列印</h3>
+            <h3>🏆 運動與專長：法式滾球、賽車、羽球、撞球、直排輪、跳舞</h3>
+            <p style="color: gray; font-size: 0.8em;">* 拉動視窗寬度可切換至手機版樣式</p>
+        </div>
+
+        <div class="m-only">
+            <h2>李帛達</h2>
+            <p>資工大學生 / 運動員</p>
+            <div style="background: #f1f5f9; padding: 15px; border-radius: 12px; margin-bottom: 10px;">
+                <strong>🛠️ 技術：</strong> C/C++、3D列印、電腦繪圖
+            </div>
+            <div style="background: #f1f5f9; padding: 15px; border-radius: 12px;">
+                <strong>🏃 興趣：</strong> 賽車、羽球、撞球、滾球、跳舞
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
